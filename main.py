@@ -213,7 +213,6 @@ def simplify_extensions(tree):
     
     if tree.node_type == "unary":
         if tree.value == '+':
-            # Convertir a+ a aa*
             operand = tree.left
             star_node = TreeNode('*', "unary")
             star_node.left = operand
@@ -224,7 +223,6 @@ def simplify_extensions(tree):
             
             return concat_node
         elif tree.value == '?':
-            # Convertir a? a (a|ε)
             operand = tree.left
             epsilon_node = TreeNode('ε', "leaf")
             
