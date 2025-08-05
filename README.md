@@ -27,11 +27,6 @@ python main.py
 # Presionar Enter cuando se solicite el nombre del archivo
 ```
 
-#### Opción 2: Usar archivo personalizado
-```bash
-python main.py
-# Ingresar el nombre del archivo (ej: expresiones_regulares.txt)
-```
 
 ### Formato del Archivo de Entrada
 
